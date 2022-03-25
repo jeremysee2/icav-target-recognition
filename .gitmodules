@@ -1,3 +1,6 @@
 [submodule "lora/arduino-lmic"]
 	path = lora/arduino-lmic
 	url = git@github.com:mcci-catena/arduino-lmic.git
+[submodule "lora/arduino-esp-1ch-gateway"]
+	path = lora/arduino-esp-1ch-gateway
+	url = https://github.com/things4u/ESP-1ch-Gateway-v5.0--OLD
