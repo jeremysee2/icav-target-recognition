@@ -1,0 +1,5 @@
+Jetson.GPIO
+sparkfun-ublox-gps
+sparkfun-qwiic-bme280
+serial
+numpy
