@@ -5,7 +5,6 @@ import ICAV.imagerecognition
 
 class UAV():
     def __init__(self) -> None:
-        self.altitude   = ICAV.altitude.Altitude()
         self.imgrec     = ICAV.imagerecognition.ImageRecognition()
 
     """

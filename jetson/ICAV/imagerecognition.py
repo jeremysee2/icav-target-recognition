@@ -3,9 +3,11 @@ import cv2
 import numpy as np
 
 import ICAV.GPSposition
+import ICAV.altitude
 
 class ImageRecognition():
     def __init__(self) -> None:
+        self.altitude   = ICAV.altitude.Altitude()
         self.GPS        = ICAV.GPSposition.GPSPosition()
         self.image      = None
         self.targetGPS  = None

@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # Infinite loop to run at a set interval
     while True:
         # Query data from all sensors
-        uav.altitude.queryAltitude()
+        uav.imgrec.altitude.queryAltitude()
         uav.imgrec.GPS.queryPosition()
         uav.imgrec.captureImage()
 
