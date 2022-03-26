@@ -3,3 +3,5 @@ sparkfun-ublox-gps
 sparkfun-qwiic-bme280
 serial
 numpy
+spidev
+opencv-python
