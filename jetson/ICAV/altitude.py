@@ -37,15 +37,16 @@ class Altitude():
         # Memory to save last known altitude
         self.altitude = 0.0
 
-    def queryAltitude(self) -> float:
-        return self.altitude
-
-    def getAltitude(self) -> None:
+    def queryAltitude(self) -> None:
         self.altitude = self.mySensor.altitude_feet
+
+    def getAltitude(self) -> float:
+        return self.altitude
 
 if __name__ == '__main__':
     try:
         bme280 = Altitude()
+        bme280.queryAltitude()
         print(f'Current Altitude: {bme280.getAltitude()}')
     except ConnectionError as exErr:
         print("The Qwiic BME280 device isn't connected to the system. Please check your connection")
